@@ -1,0 +1,24 @@
+Given an incomplete program:
+- function removeLastSubString():
++ receive 2 string (char *str, char *sub)
++ do: remove the last existence of string sub from string str
+- function main: read from input two string, call removeLastSubString() and print the first string.
+To do
+- complete function removeLastSubString()
+Hint: use function strstr() and memmove()
+Input description:
+- First line is the first string. - Second line is the second string
+
+
+EXAMPLE:
+Input:
+truong dai hoc bach khoa thanh pho ho chi minh
+ho
+Output:
+truong dai hoc bach khoa thanh pho  chi minh
+Noted: Print "\n" at the end
+Explain example
+- str1 = "truong dai hoc bach khoa thanh pho ho chi minh"
+- str2 = "ho"
+The last existance of str2 in str1 is "truong dai hoc bach khoa thanh pho ho chi minh".
+After call removeLastSubString(), str1 would be "truong dai hoc bach khoa thanh pho  chi minh"
